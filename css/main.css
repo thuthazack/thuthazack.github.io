@@ -1,13 +1,14 @@
 body {
     margin: 60px auto;
     width: 70%;
-    height: 1000px;
+    height: 100%;
     background-color: black; /* For browsers that do not support gradients */
     background-image: linear-gradient(black, white); /* Standard syntax (must be last) */
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
+    padding-bottom: 50px;
     list-style: none;
     font-weight: bold;
 }
@@ -34,8 +35,42 @@ p {
 
 footer {
     border-top: 1px solid #d5d5d5;
+    min-height: 5rem;
     font-size: .8em;
 }
+
+topnav {
+  background-color: green;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: green;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color: #4CAF50;
+color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+float: right;
+}
+
 
 ul.posts { 
     margin: 20px auto 40px; 
@@ -49,14 +84,18 @@ ul.posts li {
   #about {
     padding-top: 5em;
     position: relative;
-    width: 100%;
-    height: 100px;
+    width: 100vw;
+    margin-left: -50vw;
+    left:50%;
+    min-height: 0rem;
   }
   #block {
     padding-top: 5em;
     position: relative;
-    width: 100%;
-    height: 100px;
+    width: 100vw;
+    margin-left: -50vw;
+    left:50%;
+    min-height: 0rem;
   }
 
   @keyframes text {
