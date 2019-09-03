@@ -2,6 +2,7 @@ body {
     height: 100%;
     background-color: rgb(255, 254, 254); /* For browsers that do not support gradients */
     background-image: linear-gradient(black, white); /* Standard syntax (must be last) */
+    font-family: 'Times New Roman', Times, serif
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -10,6 +11,7 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
@@ -38,7 +40,12 @@ h3{
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: rgb(255, 255, 255);
+    color:#4997D0;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 500px;
+    margin-left: 500px;
 }
 
 footer {
@@ -96,8 +103,14 @@ ul.posts li {
     margin-left: -50vw;
     left:50%;
     min-height: 0rem;
-    padding-bottom: 1%;
+    padding-bottom: 5%;
     opacity: 0.9;
+    background-color: black;
+    padding:100px;
+    border-style:solid;
+    border-width: 1px;
+    border-color:goldenrod;
+
   }
   P.blocktext{
     margin-left:auto;
@@ -123,12 +136,21 @@ ul.posts li {
     /* padding-top: 5em; */
     position: relative;
     width: 100vw;
+    height: 50vw;
     margin-left: -50vw;
     left:50%;
     min-height: 0rem;
-    padding-bottom: 20%;
+    background-color:white;
+    color:white;
+    padding:100px; 
+    background:transparent;
+    margin-top: 20vw;
 
-
+  }
+  
+  .profilepic {
+    max-width: 500px;
+    max-height: 500px;
   }
   
   #block {
