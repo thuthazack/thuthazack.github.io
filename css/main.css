@@ -38,9 +38,9 @@ h3{
   font-style:italic;
 }
 p {
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.4em;
-    color:#4997D0;
+    color:turquoise;
 
     margin-top: 20px;
     margin-bottom: 20px;
@@ -103,6 +103,7 @@ ul.posts li {
     margin-left: -50vw;
     left:50%;
     min-height: 0rem;
+    height: 100vh;
     padding-bottom: 5%;
     opacity: 0.9;
     background-color: black;
@@ -136,15 +137,14 @@ ul.posts li {
     /* padding-top: 5em; */
     position: relative;
     width: 100vw;
-    height: 50vw;
+    height: 70vh;
     margin-left: -50vw;
     left:50%;
     min-height: 0rem;
-    background-color:white;
     color:white;
     padding:100px; 
     background:transparent;
-    margin-top: 20vw;
+    margin-top: 35vh;
 
   }
   
