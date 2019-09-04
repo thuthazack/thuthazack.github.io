@@ -10,6 +10,7 @@ nav ul, footer ul {
     padding-bottom: 50px;
     list-style: none;
     font-weight: bold;
+    background-color:black;
 }
 
 nav ul li, footer ul li {
@@ -18,7 +19,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color:turquoise;
 }
 a:hover {
     text-decoration: underline;
