@@ -2,15 +2,27 @@ body {
     height: 100%;
     background-color: rgb(255, 254, 254); /* For browsers that do not support gradients */
     background-image: linear-gradient(black, white); /* Standard syntax (must be last) */
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
 }
-nav ul, footer ul {
+ footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
-    padding-bottom: 50px;
+    padding-bottom: 10vh;
+    text-align:center;
     list-style: none;
     font-weight: bold;
     background-color:black;
+    font-size:5em;
+}
+nav ul{
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  padding: 0px;
+  padding-bottom: 15px;
+  text-align:center;
+  list-style: none;
+  font-weight: bold;
+  background-color:black;
+  padding-top:0px;
 }
 
 nav ul li, footer ul li {
@@ -32,7 +44,7 @@ h1 {
 }
 h2{
   text-align: center;
-  color:black;
+  color:white;
   font-size: 5em;
 }
 h3{
@@ -44,12 +56,12 @@ h3{
 h4{
   font-size: 4em;
   text-align: center;
-  color:black;
+  color:white;
 }
 p {
     font-size: 2em;
     line-height: 1.4em;
-    color:black;
+    color:white;
 
     margin-top: 20px;
     margin-bottom: 20px;
@@ -126,7 +138,7 @@ img.displayed {
     height: 100vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
-    background-color:white;
+    background-color:black;
     padding:100px;
     border-style:solid;
     border-width: 1px;
@@ -143,7 +155,7 @@ img.displayed {
     height: 90vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
-    background-color:white;
+    background-color:black;
     padding:100px;
     border-style:solid;
     border-width: 1px;
@@ -161,7 +173,7 @@ img.displayed {
     height: 80vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
-    background-color:white;
+    background-color:black;
     padding:100px;
     border-style:solid;
     border-width: 1px;
@@ -178,7 +190,7 @@ img.displayed {
     height: 200vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
-    background-color:white;
+    background-color:black;
     padding:100px;
     border-style:solid;
     border-width: 1px;
