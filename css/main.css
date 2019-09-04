@@ -41,6 +41,11 @@ h3{
   color:black;
   font-style:italic;
 }
+h4{
+  font-size: 4em;
+  text-align: center;
+  color:black;
+}
 p {
     font-size: 2em;
     line-height: 1.4em;
@@ -147,13 +152,30 @@ img.displayed {
   }
 
   #works_continued {
-    /* padding-top: 5em; */
+    /* padding-top: 50vh; */
     position: relative;
     width: 100vw;
     margin-left:-50vw;
     left:50%;
     min-height: 0rem;
     height: 80vh;
+    padding-bottom: 5%;
+    /* opacity: 0.9; */
+    background-color:white;
+    padding:100px;
+    border-style:solid;
+    border-width: 1px;
+    border-color:goldenrod;
+
+  }
+  #extra {
+    /* padding-top: 5em; */
+    position: relative;
+    width: 100vw;
+    margin-left:-50vw;
+    left:50%;
+    min-height: 0rem;
+    height: 200vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
     background-color:white;
