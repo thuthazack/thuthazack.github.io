@@ -171,7 +171,6 @@ img.displayed {
     left:50%;
     min-height: 0rem;
     height: 80vh;
-    padding-bottom: 5%;
     /* opacity: 0.9; */
     background-color:black;
     padding:100px;
@@ -204,7 +203,20 @@ img.displayed {
 
 
   }
-
+  .container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
   div.hr {
       border: 0;
       width: 80%;
