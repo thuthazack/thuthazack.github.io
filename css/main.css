@@ -52,6 +52,13 @@ p {
     margin-left: 0vw;
 }
 
+.line{
+  width: 100vw;
+  height: 47px;
+  border-bottom: 5px solid turquoise;
+  position: relative;
+  }
+
 footer {
     border-top: 1px solid #d5d5d5;
     min-height: 5rem;
@@ -128,7 +135,25 @@ img.displayed {
     margin-left:-50vw;
     left:50%;
     min-height: 0rem;
-    height: 200vh;
+    height: 90vh;
+    padding-bottom: 5%;
+    /* opacity: 0.9; */
+    background-color:white;
+    padding:100px;
+    border-style:solid;
+    border-width: 1px;
+    border-color:goldenrod;
+
+  }
+
+  #works_continued {
+    /* padding-top: 5em; */
+    position: relative;
+    width: 100vw;
+    margin-left:-50vw;
+    left:50%;
+    min-height: 0rem;
+    height: 80vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
     background-color:white;
