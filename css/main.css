@@ -44,7 +44,7 @@ h1 {
 }
 h2{
   text-align: center;
-  color:white;
+  color:black;
   font-size: 5em;
 }
 h3{
@@ -56,12 +56,12 @@ h3{
 h4{
   font-size: 4em;
   text-align: center;
-  color:white;
+  color:black;
 }
 p {
     font-size: 2em;
     line-height: 1.4em;
-    color:white;
+    color:black;
 
     margin-top: 20px;
     margin-bottom: 20px;
@@ -138,11 +138,8 @@ img.displayed {
     height: 100vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
-    background-color:black;
+    background-color:#595C61;
     padding:100px;
-    border-style:solid;
-    border-width: 1px;
-    border-color:goldenrod;
 
   }
   #works {
@@ -152,14 +149,11 @@ img.displayed {
     margin-left:-50vw;
     left:50%;
     min-height: 0rem;
-    height: 90vh;
-    padding-bottom: 5%;
+    height: 50vh;
     /* opacity: 0.9; */
-    background-color:black;
+    background-color:#557A95;
     padding:100px;
-    border-style:solid;
-    border-width: 1px;
-    border-color:goldenrod;
+    padding-bottom: -100vh;
 
   }
 
@@ -170,13 +164,11 @@ img.displayed {
     margin-left:-50vw;
     left:50%;
     min-height: 0rem;
-    height: 80vh;
+    height: 50vh;
     /* opacity: 0.9; */
-    background-color:black;
+    background-color:#557A95;
     padding:100px;
-    border-style:solid;
-    border-width: 1px;
-    border-color:goldenrod;
+    padding-bottom: 5vh;
 
   }
   #extra {
@@ -189,11 +181,8 @@ img.displayed {
     height: 200vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
-    background-color:black;
+    background-color:#379683;
     padding:100px;
-    border-style:solid;
-    border-width: 1px;
-    border-color:goldenrod;
 
   }
   P.blocktext{
