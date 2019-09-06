@@ -12,7 +12,7 @@ body {
     list-style: none;
     font-weight: bold;
     background-color:black;
-    font-size:5em;
+    font-size:2em;
 }
 nav ul{
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -138,7 +138,7 @@ img.displayed {
     height: 100vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
-    background-color:#595C61;
+    background-color:#B0E0E6;
     padding:100px;
 
   }
@@ -149,9 +149,9 @@ img.displayed {
     margin-left:-50vw;
     left:50%;
     min-height: 0rem;
-    height: 50vh;
+    height: 58vh;
     /* opacity: 0.9; */
-    background-color:#557A95;
+    background-color:#E8A87C;
     padding:100px;
     padding-bottom: -100vh;
 
@@ -164,11 +164,10 @@ img.displayed {
     margin-left:-50vw;
     left:50%;
     min-height: 0rem;
-    height: 50vh;
+    height: 55vh;
     /* opacity: 0.9; */
-    background-color:#557A95;
+    background-color:#E8A87C;
     padding:100px;
-    padding-bottom: 5vh;
 
   }
   #extra {
@@ -182,6 +181,20 @@ img.displayed {
     padding-bottom: 5%;
     /* opacity: 0.9; */
     background-color:#379683;
+    padding:100px;
+
+  }
+  #quote {
+    /* padding-top: 5em; */
+    position: relative;
+    width: 100vw;
+    margin-left:-50vw;
+    left:50%;
+    min-height: 0rem;
+    height: 30vh;
+    padding-bottom: 5%;
+    /* opacity: 0.9; */
+    background-color:#B0E0E6;
     padding:100px;
 
   }
