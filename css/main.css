@@ -7,7 +7,7 @@ body {
  footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
     text-align:center;
     list-style: none;
     font-weight: bold;
@@ -177,7 +177,7 @@ img.displayed {
     margin-left:-50vw;
     left:50%;
     min-height: 0rem;
-    height: 200vh;
+    height: 220vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
     background-color:#379683;
@@ -191,7 +191,7 @@ img.displayed {
     margin-left:-50vw;
     left:50%;
     min-height: 0rem;
-    height: 30vh;
+    height: 40vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
     background-color:#B0E0E6;
