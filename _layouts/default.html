@@ -12,57 +12,56 @@
 						<li><a href="/blog">Blog</a></li>
 					</ul>
 				</nav> -->
-		<style>
-			
-		</style>
 			<head>
 				<meta charset="utf-8">
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 				<title>
 					{{ page.title }}
 					
-				</title>
+					</title>
 				
 				
-			</head>
+				</head>
 			
 			<body>
 				<section style="background-image: url('../img/black.jpg');background-repeat: no-repeat;z-index: -1000;
 				background-size: cover;position: fixed; top: 0; left: 0; min-width: 100%; min-height: 100%;"></section>
-				<div class = "container-fluid" >
-						<div  id = 'top-section'>
+				<div class = "container-fluid" id = 'top-section'>
 						<section>
-							<div style="font-size: 2em;">
-								<h3>Nice to meet you,</h3>
-								
-							</div>
+								<div style="font-size: 2em;">
+										<h3>Nice to meet you,</h3>
+									</div>
+
 								<h2 class="mb-5" style="font-size:5em;color: turquoise;font-family: 'Times New Roman', Times, serif">
 									~I'm Zack~
-								</h2>
+									</h2>
+
 								<div style="font-size: 2em;">
-								<h3>
-									Recent graduate from University of Michigan<br><br>
-									 
-								</h3>
-								</div>
+									<h3>
+										Recent graduate from University of Michigan<br><br>
+										
+										</h3>
+									</div>
+
 								<div style="font-size: 2em;">
-								<h1>Seeking for Entry Level Opportunities!</h1>
-								</div>
+									<h1>Seeking for Entry Level Opportunities!</h1>
+									</div>
 								<center>
 								<a class="btn btn-info btn-lg" href="https://drive.google.com/file/d/1kiDN8TIU80FwWpjU0C4aIUcSRRsMhK5a/view?usp=sharing" target="_blank">Resume</a>
-							</center>
+								</center>
+								</div>
 							</section>
-						</div>
-				</div>
+					</div>
 
 				
 			<!-- About -->
-			<div class = "container-fluid" id = 'about'>
-					
+				<div class = "container-fluid row" id = 'about'>
 					<section>
 						<div style="margin-top:15vh; margin-left:20vw;margin-right:10vw;">
-							<img class="profilepic img-fluid rounded" src="img/pfp.jpeg" height = "800" width = "600" style = "object-fit:cover;float:left; margin: 10px 100px 0px 0px;">
-
+							<div class = "col-xs-4 col-sm-4 col-lg-4">
+							<img class="profilepic img-fluid rounded" src="img/pfp.jpeg" height = "800" width = "600" style = "object-fit:cover; float:left;margin: 10px 100px 0px 0px;">
+								</div>
+							<div class = "col-xs-8 col-sm-8 col-lg-8">
 							<h2 style="font-size:2.5em; padding-bottom:0.5em;text-align: left;color:#379683;"> A little bit about me...</h2>
 							
 							<p class="font-weight-normal mb-5" >
@@ -73,21 +72,23 @@
 									I like to keep myself busy at all times. Currently, I am working on developing a device called Smart Sensor Interface as a part of Professor Robert Dick's team while working as a part time 
 								marketing manager of a startup that I cofounded called BridgeBurma.
 								
-							</p>
-							
+								</p>
+							</div>
 							</div>
 
 						</section>
 					</div>
 
-				<div class = "container-fluid" id = 'works'>
+				<div class = "row container-fluid" id = 'works'>
 						<section>
 							
 								<h2>My past works... </h2>
 								<div style="margin-top:10vh; margin-left:0vw;margin-right:0vw;">
 											
-											
+										<div class = "col-xs col-sm col-lg">
 											<img class="profilepic img-fluid rounded" src="img/pro.JPG" height = "600" width = "800" style = "object-fit:fill;float:left; margin: 10px 100px 0px 0px;">
+											</div>
+											<div class = "col col-xs col-sm col-lg">
 											<p>
 												<h4 style="text-align:left;font-weight:bold;font-size: 3em;">Smart Sensor Interface</h4>
 												<div style="font-size: 2em;color:black">
@@ -97,19 +98,20 @@
 												Key skills used: ANSI-C, C++, Python, MATLAB, Eagle, PCB prototyping, Cellular Communication, UART, SPI, I2C, Logic Analyzer, FreeRTOS, Atmel Studios.
 												</div>
 											
-										</p>
+												</p>
+												</div>
 								</div>
 									
 									
 						</section>
-				</div>
-				
-				<div class = "container-fluid" id = 'works_continued'>
+						<!-- <div class="w-0"></div> -->
 						<section>
 								<div style="padding-bottom: 10vh;">
 								<p>
+										<div class = "col-xs col-sm col-lg">
 									<img class="profilepic img-fluid rounded" src="img/vest.jpg" height = "800" width = "600" style = "object-fit:cover;float:right; margin: 10px 100px 100px 100px; ">
-
+											</div>
+											<div class = "col-xs col-sm col-lg">
 										<h4 style="text-align:left;font-weight:bold;font-size: 3em;">Spinosaurus</h4>
 										<div style="font-size: 2em;color:black;">
 											The proposed goal of our wearable Spinosaurus was to provide weightlifters feedback on their back form while squatting and deadlifting. It is comprised of a vest (the SpineAligner) that stretches across the spin and an Android phone app. The vest has the ability to measure the orientation of
@@ -117,7 +119,7 @@
 									<br><br>
 									Key skills used: PCB designing, debugging and validation, BlueTooth, Android App, SPI, UART, Eagle, and Arduino.
 										</div>
-									
+									</div>
 								</p>
 								</div>
 						</section>
