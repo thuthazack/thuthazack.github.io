@@ -357,7 +357,7 @@ footer a {
 }
 
 #top-section > section {
-  width: min(100%, 54rem);
+  width: min(100%, 68rem);
 }
 
 #top-section h2 {
@@ -370,7 +370,7 @@ footer a {
 #top-section .hero-title {
   margin: 0 0 1rem !important;
   color: #f3dfd1 !important;
-  font: 500 clamp(3rem, 7vw, 5.5rem)/1.05 Georgia, serif !important;
+  font: 500 clamp(2.8rem, 6vw, 4.8rem)/1.05 Georgia, serif !important;
   text-align: left;
 }
 
@@ -393,7 +393,8 @@ footer a {
 #top-section .hero-subtitle {
   margin: 0 0 1.5rem;
   color: #f4eee7;
-  font-size: 1.25rem;
+  max-width: 38rem;
+  font-size: 1.15rem;
 }
 
 #top-section h3 {
@@ -432,8 +433,41 @@ footer a {
   width: min(100%, 42rem);
   max-width: 100%;
   height: auto;
-  margin: 1rem auto;
+  margin: 1rem 0 2rem;
   object-fit: contain;
+  border-radius: 4px;
+}
+
+#extra > section > div {
+  width: min(100%, 74rem);
+  margin: 0 auto !important;
+}
+
+#extra h2 {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.65rem;
+  text-align: left;
+}
+
+#extra br {
+  display: none;
+}
+
+#extra p {
+  max-width: 68ch;
+  font-size: 1.05rem;
+}
+
+#quote h2 {
+  max-width: 58rem;
+  margin: 0 auto 1rem;
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  line-height: 1.35;
+}
+
+#quote .site-notice {
+  text-align: center;
+  font-size: 0.95rem;
 }
 
 .page {
@@ -460,7 +494,24 @@ footer a {
 
 #about > section > div {
   max-width: 68rem;
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.75fr) minmax(0, 1.25fr);
+  align-items: center;
+  gap: 1.5rem 3rem;
   margin: 0 auto !important;
+}
+
+#about > section > div > h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  text-align: left !important;
+}
+
+#about > section > div > .col-xs-4,
+#about > section > div > .col-xs-10 {
+  width: 100%;
+  max-width: none;
+  padding: 0;
 }
 
 #about h2 {
@@ -469,8 +520,59 @@ footer a {
 }
 
 #about img {
-  max-width: min(32vw, 20rem);
-  margin: 0 2rem 1rem 0 !important;
+  width: 100%;
+  max-width: 22rem;
+  max-height: 28rem;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  margin: 0 !important;
+  border-radius: 4px;
+}
+
+#about p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+#works section {
+  max-width: 74rem;
+  margin: 0 auto;
+}
+
+#works section > div[style*="margin-top"] {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  margin: 2rem auto 0 !important;
+}
+
+#works section > div[style*="margin-top"] > div,
+#works section > div[style*="padding-bottom"] > p > div {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+#works section > div[style*="padding-bottom"] {
+  padding-bottom: 0 !important;
+}
+
+#works section > div[style*="padding-bottom"] > p {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  margin: 0;
+}
+
+#works img {
+  width: 100%;
+  max-width: none;
+  max-height: 24rem;
+  object-fit: cover !important;
+  float: none !important;
+  margin: 0 !important;
   border-radius: 4px;
 }
 
@@ -678,11 +780,20 @@ footer ul {
   }
 
   #top-section .hero-title {
-    font-size: clamp(3rem, 14vw, 4.5rem) !important;
+    font-size: clamp(2.6rem, 12vw, 4rem) !important;
+  }
+
+  #about > section > div {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
   #about > section > div {
     margin: 1rem 0 !important;
+  }
+
+  #about > section > div > h2 {
+    grid-column: auto;
   }
 
   #about img,
@@ -692,11 +803,17 @@ footer ul {
   }
 
   #about img {
-    max-width: min(100%, 20rem);
+    max-width: min(100%, 19rem);
   }
 
   #works h4 {
     font-size: 1.75rem !important;
+  }
+
+  #works section > div[style*="margin-top"],
+  #works section > div[style*="padding-bottom"] > p {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
   #extra > section > div {
