@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Thuta Aung's Blog
+title: About | Thuta Aung
+description: About Thuta Aung, also known as Zack Chen.
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
-
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+<article class="page prose">
+	<h1>About</h1>
+	<p>Welcome! My name is Thuta Aung, but you can call me Zack. I graduated from the University of Michigan with a BSE in computer engineering. My primary area of focus is firmware and low-level software for low-power embedded systems.</p>
+	<p>I have worked on embedded sensing projects, including the Smart Sensor Interface and a wearable posture-feedback system. I also cofounded BridgeBurma, a community focused on sharing opportunities and knowledge among Burmese students around the world.</p>
+	<p>Explore my <a href="{{ '/cv/' | relative_url }}">CV</a> and <a href="{{ '/blog/' | relative_url }}">writing</a>, or browse the projects on the <a href="{{ '/' | relative_url }}">home page</a>.</p>
+</article>

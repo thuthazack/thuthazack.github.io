@@ -1,8 +1,9 @@
 body {
-    height: 100%;
-    background-color: rgb(255, 254, 254); /* For browsers that do not support gradients */
-    background-image: linear-gradient(black, white); /* Standard syntax (must be last) */
-    font-family: 'Times New Roman', Times, serif;
+  height: 100%;
+  background-color: #f4eee7;
+  background-image: none;
+  color: #332a25;
+  font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
 }
  footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -11,7 +12,7 @@ body {
     text-align:center;
     list-style: none;
     font-weight: bold;
-    background-color:black;
+    background-color:#49372f;
     font-size:2em;
 }
 nav ul{
@@ -21,7 +22,7 @@ nav ul{
   text-align:center;
   list-style: none;
   font-weight: bold;
-  background-color:black;
+  background-color:#49372f;
   padding-top:0px;
 }
 
@@ -31,37 +32,38 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color:turquoise;
+    color:#79533f;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
     text-align: center;
-    font-size: 1em;
-    color:black;
-    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: #332a25;
+    font-family: Georgia, serif;
 }
 h2{
   text-align: center;
-  color:black;
-  font-size: 5em;
+  color: #49372f;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  font-family: Georgia, serif;
 }
 h3{
-  font-size:1em;
+  font-size:1.125rem;
   text-align: center;
-  color:black;
+  color:#49372f;
   font-style:italic;
 }
 h4{
-  font-size: 4em;
+  font-size: 1.5rem;
   text-align: center;
-  color:black;
+  color:#49372f;
 }
 p {
-    font-size: 2em;
-    line-height: 1.4em;
-    color:black;
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color:#332a25;
 
     margin-top: 20px;
     margin-bottom: 20px;
@@ -72,7 +74,7 @@ p {
 .line{
   width: 100vw;
   height: 47px;
-  border-bottom: 5px solid turquoise;
+  border-bottom: 5px solid #d8a891;
   position: relative;
   }
 
@@ -138,7 +140,7 @@ img.displayed {
     height: 100vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
-    background-color:#B0E0E6;
+    background-color:#dce8dc;
     padding:100px;
 
   }
@@ -151,7 +153,7 @@ img.displayed {
     min-height: 0rem;
     height:158vh;
     /* opacity: 0.9; */
-    background-color:#E8A87C;
+    background-color:#f1d8cc;
     padding:100px;
     /* padding-bottom: 20vh; */
 
@@ -166,7 +168,7 @@ img.displayed {
     min-height: 0rem;
     height: 55vh;
     /* opacity: 0.9; */
-    background-color:#E8A87C;
+    background-color:#f1d8cc;
     padding:100px;
 
   }
@@ -180,7 +182,7 @@ img.displayed {
     height: 220vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
-    background-color:#379683;
+    background-color:#d8e5eb;
     padding:100px;
 
   }
@@ -194,7 +196,7 @@ img.displayed {
     height: 40vh;
     padding-bottom: 5%;
     /* opacity: 0.9; */
-    background-color:#B0E0E6;
+    background-color:#eadfcf;
     padding:100px;
 
   }
@@ -274,3 +276,446 @@ img.displayed {
       margin-bottom: -40px;
     }
   }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  height: auto;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  padding: 0.65rem 1rem;
+  background: #49372f;
+  font: 500 0.95rem/1.4 "Avenir Next", Avenir, "Segoe UI", sans-serif;
+}
+
+.site-nav a {
+  padding: 0.35rem 0.5rem;
+}
+
+.site-nav a,
+footer a {
+  color: #f3dfd1;
+}
+
+.btn-info {
+  background-color: #79533f;
+  border-color: #79533f;
+  border-radius: 3px;
+  padding: 0.7rem 1.15rem;
+  font-size: 1rem;
+}
+
+.site-content {
+  width: 100%;
+  max-width: 100%;
+}
+
+#about,
+#works,
+#works_continued,
+#extra,
+#quote {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 0;
+  margin-left: 0;
+  margin-right: 0;
+  left: auto;
+  padding: clamp(1.25rem, 5vw, 4rem);
+}
+
+#top-section {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: min(76vh, 700px);
+  margin: 0;
+  left: auto;
+  padding: clamp(3rem, 9vw, 8rem);
+  display: flex;
+  align-items: center;
+  background: #49372f;
+  color: #f4eee7;
+}
+
+#top-section > section {
+  width: min(100%, 54rem);
+}
+
+#top-section h2 {
+  margin: 0 0 1rem !important;
+  color: #f3dfd1 !important;
+  font: 500 clamp(3rem, 7vw, 5.5rem)/1.05 Georgia, serif !important;
+  text-align: left;
+}
+
+#top-section .hero-title {
+  margin: 0 0 1rem !important;
+  color: #f3dfd1 !important;
+  font: 500 clamp(3rem, 7vw, 5.5rem)/1.05 Georgia, serif !important;
+  text-align: left;
+}
+
+#top-section .hero-title span {
+  color: #e7c8b5;
+}
+
+#top-section .hero-eyebrow,
+#top-section .hero-subtitle {
+  color: #e7c8b5;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#top-section .hero-eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+#top-section .hero-subtitle {
+  margin: 0 0 1.5rem;
+  color: #f4eee7;
+  font-size: 1.25rem;
+}
+
+#top-section h3 {
+  margin: 0 0 0.75rem;
+  color: #e7c8b5;
+  font: 500 1.1rem/1.5 "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  text-align: left;
+}
+
+#top-section h1 {
+  margin: 1.5rem 0;
+  color: #f4eee7;
+  font: 400 clamp(1.25rem, 2.5vw, 1.7rem)/1.4 "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  text-align: left;
+}
+
+#top-section center {
+  text-align: left;
+}
+
+.profilepic {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+#extra img,
+#extra video {
+  max-width: 100%;
+  height: auto;
+}
+
+#extra .project-media {
+  display: block;
+  width: min(100%, 42rem);
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  object-fit: contain;
+}
+
+.page {
+  width: min(100% - 2rem, 56rem);
+  margin: clamp(2rem, 7vw, 5rem) auto;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.prose {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.prose h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2.25rem;
+}
+
+.prose p,
+.prose li {
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+#about > section > div {
+  max-width: 68rem;
+  margin: 0 auto !important;
+}
+
+#about h2 {
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.8rem, 4vw, 2.7rem) !important;
+}
+
+#about img {
+  max-width: min(32vw, 20rem);
+  margin: 0 2rem 1rem 0 !important;
+  border-radius: 4px;
+}
+
+#works h2,
+#quote h2 {
+  margin: 0 0 2rem;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+}
+
+#works h3 {
+  font-size: 1.5rem !important;
+  font-style: normal;
+  text-align: left;
+}
+
+#works div[style*="font-size: 2em"] {
+  font-size: 1.125rem !important;
+  line-height: 1.65;
+}
+
+.prose .posts {
+  padding-left: 0;
+  font-size: 1rem;
+}
+
+.prose .posts li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.post-date {
+  color: #444;
+}
+
+.document-link {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border: 2px solid currentColor;
+  font-weight: bold;
+}
+
+.resume {
+  width: min(100% - 2rem, 54rem);
+  margin: 2rem auto;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  background: #fffdfa;
+  color: #332a25;
+  box-shadow: 0 8px 30px rgba(73, 55, 47, 0.1);
+  font: 0.95rem/1.5 "Avenir Next", Avenir, "Segoe UI", sans-serif;
+}
+
+.resume p,
+.resume li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.resume h1,
+.resume h2,
+.resume h3,
+.resume p {
+  margin: 0;
+  text-align: left;
+}
+
+.resume-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #79533f;
+}
+
+.resume-kicker {
+  color: #79533f;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.resume-header h1 {
+  margin-top: 0.35rem;
+  font: 500 clamp(2rem, 5vw, 3rem)/1.1 Georgia, serif;
+}
+
+.resume-header h1 span {
+  color: #79533f;
+}
+
+.resume-role {
+  margin-top: 0.4rem !important;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  margin-top: 0.85rem;
+  font-size: 0.85rem;
+}
+
+.resume-summary {
+  max-width: 47rem;
+  margin-top: 1rem !important;
+  color: #51453e;
+  font-size: 1rem !important;
+}
+
+.resume-section {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #d9c9bc;
+}
+
+.resume-section h2 {
+  margin-bottom: 0.85rem;
+  color: #79533f;
+  font: 700 0.82rem/1.3 "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  text-transform: uppercase;
+}
+
+.resume-entry + .resume-entry {
+  margin-top: 1.1rem;
+}
+
+.resume-entry h3 {
+  font: 700 1rem/1.35 "Avenir Next", Avenir, "Segoe UI", sans-serif;
+}
+
+.resume-entry-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.resume-entry-heading p,
+.resume-entry-heading time {
+  color: #66594f;
+  font-size: 0.85rem;
+}
+
+.resume-entry ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.resume-entry li,
+.resume-entry > p,
+.resume-bottom p {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.resume-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 1.5rem;
+  border-bottom: 0;
+}
+
+@media print {
+  .site-nav,
+  footer {
+    display: none !important;
+  }
+
+  body,
+  .resume {
+    background: white;
+  }
+
+  .resume {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    font-size: 9.5pt;
+  }
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin: 0;
+  padding: 1.5rem 1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  #top-section {
+    min-height: 68vh;
+    padding: 3rem 1.5rem;
+  }
+
+  #top-section .hero-title {
+    font-size: clamp(3rem, 14vw, 4.5rem) !important;
+  }
+
+  #about > section > div {
+    margin: 1rem 0 !important;
+  }
+
+  #about img,
+  #works img {
+    float: none !important;
+    margin: 1rem auto !important;
+  }
+
+  #about img {
+    max-width: min(100%, 20rem);
+  }
+
+  #works h4 {
+    font-size: 1.75rem !important;
+  }
+
+  #extra > section > div {
+    margin: 0 !important;
+  }
+
+  #extra img,
+  #extra video {
+    width: 100% !important;
+    margin: 1rem 0 !important;
+  }
+
+  #quote h2 {
+    font-size: 1.5rem;
+  }
+
+  .resume-entry-heading,
+  .resume-bottom {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+}

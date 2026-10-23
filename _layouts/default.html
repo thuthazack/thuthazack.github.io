@@ -1,54 +1,31 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 	<html lang="en">
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-
-			<!-- <nav class = "topnav-right">  
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="/about">About</a></li>
-						<li><a href="/cv">CV</a></li>
-						<li><a href="/blog">Blog</a></li>
-					</ul>
-				</nav> -->
-			<head>
-				<meta charset="utf-8">
-				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-				<title>
-					{{ page.title }}
-					
-					</title>
-				
-				
-				</head>
-			
-			<body>
-				<section style="background-image: url('../img/black.jpg');background-repeat: no-repeat;z-index: -1000;
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="description" content="{{ page.description | default: site.description | escape }}">
+			<title>{{ page.title | default: site.name | escape }}</title>
+			<link rel="alternate" type="application/atom+xml" title="{{ site.name | escape }} Blog" href="{{ '/blog/atom.xml' | relative_url }}">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			<link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+		</head>
+		<body>
+			<nav class="site-nav" aria-label="Main navigation">
+				<a href="{{ '/' | relative_url }}">Home</a>
+				<a href="{{ '/about/' | relative_url }}">About</a>
+				<a href="{{ '/cv/' | relative_url }}">CV</a>
+				<a href="{{ '/blog/' | relative_url }}">Blog</a>
+			</nav>
+			<main class="site-content">
+			{% if page.url == '/' %}
+				<section aria-hidden="true" style="background-image: url('{{ '/img/black.jpg' | relative_url }}');background-repeat: no-repeat;z-index: -1000;
 				background-size: cover;position: fixed; top: 0; left: 0; min-width: 100%; min-height: 100%;"></section>
 				<div class = "container-fluid" id = 'top-section'>
 						<section>
-								<div style="font-size: 2em;">
-										<h3>Nice to meet you,</h3>
-									</div>
-
-								<h2 class="mb-5" style="font-size:5em;color: turquoise;font-family: 'Times New Roman', Times, serif">
-									~I'm Zack~
-									</h2>
-
-								<div style="font-size: 2em;">
-									<h3>
-										Recent graduate from University of Michigan<br><br>
-										
-										</h3>
-									</div>
-
-								<div style="font-size: 2em;">
-									<h1>Seeking for Entry Level Opportunities!</h1>
-									</div>
-								<center>
-								<a class="btn btn-info btn-lg" href="https://drive.google.com/file/d/1kiDN8TIU80FwWpjU0C4aIUcSRRsMhK5a/view?usp=sharing" target="_blank">Resume</a>
-								</center>
+								<p class="hero-eyebrow">Embedded systems · Firmware · Low-level software</p>
+								<h1 class="hero-title">Thuta <span>(Zack)</span> Aung</h1>
+								<p class="hero-subtitle">Engineering reliable embedded systems from firmware to hardware.</p>
+								<a class="btn btn-info btn-lg" href="{{ '/cv/' | relative_url }}">View résumé</a>
 								</div>
 							</section>
 					</div>
@@ -58,20 +35,19 @@
 				<div class = "row container-fluid" id = 'about'>
 					<section>
 						<div style="margin-top:15vh; margin-left:10vw;margin-right:10vw;">
-								<h2 style="font-size:2.5em; padding-bottom:0.5em;text-align: center;color:#379683;"> A little bit about me...</h2>
+								<h2 style="font-size:2.5em; padding-bottom:0.5em;text-align: center;color:#79533f;"> A little bit about me...</h2>
 							<!-- <div class = "row"> -->
 								<div class = "col-xs-4 col-sm-4 col-lg-4">
-								<img class="profilepic img-fluid rounded" src="img/pfp.jpeg" height = "800" width = "600" style = "object-fit:cover;float:left; margin: 10px 100px 0px 0px;">
+									<img class="profilepic img-fluid rounded" src="{{ '/img/pfp.jpeg' | relative_url }}" alt="Zack standing by the coast" height="800" width="600" style="object-fit:cover;float:left; margin: 10px 100px 0px 0px;">
 									</div>
 
 								<div class = "col-xs-10 col-sm-10 col-lg-10">
 								<p class="font-weight-normal mb-5" >
 										<!-- <h2>Modern embedded systems like IoT and LPWAN are changing fast, and I want to be in the driver's seat in making the change happen</h2> -->
-									Welcome! My name is Thuta Aung, but you can call me Zack. I am a fresh graduate from University of Michigan with a BSE in computer engineering. My primary area of focus is within firmware/low level software development of low powered embedded systems.
+									Welcome! My name is Thuta Aung, but you can call me Zack. I earned a BSE in computer engineering from the University of Michigan. My work focuses on firmware and low-level software for low-power embedded systems.
 									<br><br>
 
-										I like to keep myself busy at all times. Currently, I am working on developing a device called Smart Sensor Interface as a part of Professor Robert Dick's team while working as a part time 
-									marketing manager of a startup that I cofounded called BridgeBurma.
+										My experience includes embedded sensing research and co-founding BridgeBurma, where I led marketing and user research.
 									
 									</p>
 									</div>
@@ -87,11 +63,11 @@
 								<div style="margin-top:10vh; margin-left:0vw;margin-right:0vw;">
 											
 										<div class = "col-xs col-sm col-lg">
-											<img class="profilepic img-fluid rounded" src="img/pro.JPG" height = "600" width = "800" style = "object-fit:fill;float:left; margin: 10px 100px 0px 0px;">
+											<img class="profilepic img-fluid rounded" src="{{ '/img/pro.JPG' | relative_url }}" alt="The Smart Sensor Interface project team in the lab" height="600" width="800" style="object-fit:fill;float:left; margin: 10px 100px 0px 0px;">
 											</div>
 											<div class = "col col-xs col-sm col-lg">
 											<p>
-												<h4 style="text-align:left;font-weight:bold;font-size: 3em;">Smart Sensor Interface</h4>
+												<h3 style="text-align:left;font-weight:bold;font-size: 3em;">Smart Sensor Interface</h3>
 												<div style="font-size: 2em;color:black">
 														This project describes an Internet-of-Things sensor interface that converts bare sensors and manual sensing systems into automated, wireless sensing systems. It has the goal of supporting a very wide range of sensing applications, implying the need for a very general design. The sensing system has several novel design features dictated by the application requirements including automated calibration to compensate for process variation and temperature dependence of components within the sensing system.
 											<br><br>
@@ -110,10 +86,10 @@
 								<div style="padding-bottom: 10vh;">
 								<p>
 										<div class = "col-xs col-sm col-lg">
-									<img class="profilepic img-fluid rounded" src="img/vest.jpg" height = "800" width = "600" style = "object-fit:cover;float:right; margin: 10px 100px 100px 100px; ">
+									<img class="profilepic img-fluid rounded" src="{{ '/img/vest.jpg' | relative_url }}" alt="The Spinosaurus wearable vest with its attached sensors and wiring" height="800" width="600" style="object-fit:cover;float:right; margin: 10px 100px 100px 100px;">
 											</div>
 											<div class = "col-xs col-sm col-lg">
-										<h4 style="text-align:left;font-weight:bold;font-size: 3em;">Spinosaurus</h4>
+										<h3 style="text-align:left;font-weight:bold;font-size: 3em;">Spinosaurus</h3>
 										<div style="font-size: 2em;color:black;">
 											The proposed goal of our wearable Spinosaurus was to provide weightlifters feedback on their back form while squatting and deadlifting. It is comprised of a vest (the SpineAligner) that stretches across the spin and an Android phone app. The vest has the ability to measure the orientation of
 											the user's back with three inertial measurment units (IMUs) and then communicates with the phone app to display visual feedback.
@@ -126,55 +102,12 @@
 						</section>
 
 
-						<section>
-								<div style="padding-bottom: 10vh;">
-											
-										<div class = "col-xs col-sm col-lg">
-											<img class="profilepic img-fluid rounded" src="img/pro.JPG" height = "600" width = "800" style = "object-fit:fill;float:left; margin: 10px 100px 0px 0px;">
-											</div>
-											<div class = "col col-xs col-sm col-lg">
-											<p>
-												<h4 style="text-align:left;font-weight:bold;font-size: 3em;">Tracking Tripod</h4>
-												<div style="font-size: 2em;color:black">
-														This project describes an Internet-of-Things sensor interface that converts bare sensors and manual sensing systems into automated, wireless sensing systems. It has the goal of supporting a very wide range of sensing applications, implying the need for a very general design. The sensing system has several novel design features dictated by the application requirements including automated calibration to compensate for process variation and temperature dependence of components within the sensing system.
-											<br><br>
-			
-												Key skills used: ANSI-C, C++, Python, MATLAB, Eagle, PCB prototyping, Cellular Communication, UART, SPI, I2C, Logic Analyzer, FreeRTOS, Atmel Studios.
-												</div>
-											
-												</p>
-												</div>
-								</div>
-						</section>
-
-
 				</div>
-
-
-				<!-- <div class = "container-fluid" id = 'works_continued'>
-						<section>
-
-								<div style="padding-bottom: 10vh;">
-										<p>
-											<img class="profilepic img-fluid rounded" src="img/left.JPG" height = "800" width = "600" style = "object-fit:cover;float:left; margin: 10px 100px 0px 0px;">
-
-												<h4 style="text-align:left;font-weight:bold;font-size: 3em;">Tracking Tripod</h4>
-												<div style="font-size: 2em;color:black;">
-											Welcome! My name is Thuta Aung, but you can call me Zack. I am a fresh graduate from University of Michigan with a BSE in computer engineering. My primary area of focus is within firmware/low level software development of low powered embedded systems.
-											<br><br>
-			
-												</div>
-											
-										</p>
-								</div>
-						</section>
-				</div> -->
-
 				<div id = 'extra'>
 						<section>
 								<div style = "margin-left:20vw;margin-right:20vw;">
-										<h4 >BridgeBurma</h4>
-									<img src="img/bb.JPG" style = "height:50vh; width:50vw;object-fit:fill;margin: 10px 100px 0px 0px;">
+										<h2>BridgeBurma</h2>
+									<img class="project-media" src="{{ '/img/bb.JPG' | relative_url }}" alt="BridgeBurma community website homepage">
 							
 								<p class="font-weight-normal mb-5">
 
@@ -196,10 +129,9 @@
 									<br><br><br><br><br><br><br><br>
 
 
-									<h4>Yet Another Sparkle!</h4>
-									<video style="height:50vh; width:50vw;border-width: 1px;border-style:solid;border-color: black;" controls>
-											<source src="img/YAS.mp4" type="video/mp4">
-											<source src="img/movie.ogg" type="video/ogg">
+									<h2>Yet Another Sparkle!</h2>
+									<video class="project-media" controls>
+											<source src="{{ '/img/YAS.mp4' | relative_url }}" type="video/mp4">
 										  Your browser does not support the video tag.
 									</video> 
 									
@@ -215,18 +147,20 @@
 						<section>
 								<h2>“For every reason it’s not possible, there are hundreds of people who have faced the same circumstances and succeeded.” – Jack Canfield
 								</h2>
-								<p class="font-weight-normal mb-5">
-						<h1 style="font-size:2em;color:black">Sorry for the incovenience but the website is still under construction.</h1>
-								</p>
+									<p class="site-notice">Website updates are in progress.</p>
 
 						</section>
 				</div>
+			{% else %}
+				{{ content }}
+			{% endif %}
+			</main>
 
-				<footer>
+			<footer>
 					<ul>
 						<li><a href="https://www.linkedin.com/in/thuta-aung-909a22114">linkedin</a></li>
 						<li><a href="https://github.com/thuthazack">github.com/thuthazack</a></li>
-						<li><a href="mailto:zackchen@umich.edu">zackchen@umich.edu</a></li>
+										<li><a href="mailto:zachen.official@gmail.com">zachen.official@gmail.com</a></li>
 						<li><a href="tel:734-892-7450">(734)-892-7450</a></li>
 					</ul>
 				</footer>

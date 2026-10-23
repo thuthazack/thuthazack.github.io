@@ -1,11 +1,61 @@
 ---
 layout: default
-title: Thuta Aung's CV
+title: CV | Thuta Aung
+description: Embedded systems and firmware engineering résumé for Thuta (Zack) Aung.
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
+<article class="resume">
+	<header class="resume-header">
+		<p class="resume-kicker">ENGINEERING · EMBEDDED SYSTEMS</p>
+		<h1>Thuta <span>(Zack)</span> Aung</h1>
+		<p class="resume-role">Embedded Systems &amp; Firmware Engineer</p>
+		<div class="resume-contact">
+			<a href="mailto:zachen.official@gmail.com">zachen.official@gmail.com</a>
+			<a href="https://www.linkedin.com/in/thuta-aung-909a22114">LinkedIn</a>
+			<a href="https://github.com/thuthazack">GitHub</a>
+		</div>
+		<p class="resume-summary">Computer engineer with hands-on experience owning embedded sensing systems across firmware, hardware prototyping, calibration, and validation. Combines low-level implementation with system-level tradeoffs in memory, timing, power, and sensor accuracy.</p>
+	</header>
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+	<section class="resume-section">
+		<h2>Experience</h2>
+		<article class="resume-entry">
+			<div class="resume-entry-heading">
+				<div><h3>Smart IoT Sensor Interface Design</h3><p>Research Assistant · Electrical Engineering and Computer Science, University of Michigan</p></div>
+			</div>
+			<ul>
+				<li>Owned embedded device work across firmware and hardware; designed, selected, and tested an Arduino sensor-interface shield with more than three power planes, tracking components in Eagle.</li>
+				<li>Integrated piecewise linear regression to optimize runtime and SRAM use while improving reported accuracy by a factor of 1,000.</li>
+				<li>Ported Arduino firmware to FreeRTOS on the Atmel SAM3X8E, adding burst and one-shot sensor modes, and customized SPI timing to match ADC sampling requirements.</li>
+				<li>Simulated and tested calibration algorithms and analog sensors to evaluate accuracy across operating conditions.</li>
+				<li>Researched encoding schemes reported at 87.5% efficiency for 2G SMS sensor packets and contributed to API design with memory, runtime, and user constraints in mind.</li>
+			</ul>
+		</article>
+		<article class="resume-entry">
+			<div class="resume-entry-heading">
+				<div><h3>BridgeBurma</h3><p>Co-founder &amp; Marketing Manager</p></div>
+			</div>
+			<ul><li>Led student ambassador meetings and conducted user research and website interface testing to inform the service’s student experience.</li></ul>
+		</article>
+	</section>
+
+	<section class="resume-section">
+		<h2>Selected Projects</h2>
+		<article class="resume-entry">
+			<h3>Advanced Embedded Systems</h3>
+			<p>Implemented rate-monotonic scheduling, semaphores, and deferred interrupts in Arduino and Raspberry Pi FreeRTOS projects. Built a self-navigating robot with distance sensing, wheel control, and LCD status output; also implemented a Linux H-bridge driver and OpenCV ball-tracking prototype.</p>
+		</article>
+		<article class="resume-entry">
+			<h3>Spinosaurus Wearable Posture Feedback</h3>
+			<p>Designed, selected, and debugged a Bluetooth-enabled PCB with an FTDI interface and ATmega2560 for a rechargeable wearable that measures back orientation using three IMUs.</p>
+		</article>
+		<article class="resume-entry">
+			<h3>Embedded Systems and Digital Design</h3>
+			<p>Designed Verilog timers with an APB3 interface, implemented interrupt-driven PWM servo control, and combined IMUs, IR, and flex sensors in a remotely controlled tracking tripod.</p>
+		</article>
+	</section>
+
+	<section class="resume-section resume-bottom">
+		<div><h2>Education</h2><h3>University of Michigan</h3><p>B.S.E., Computer Engineering · April 2019</p></div>
+		<div><h2>Technical Skills</h2><p>C, C++, Python, Verilog · FreeRTOS, Linux, Arduino, Raspberry Pi · SPI, UART, I2C · MATLAB, Eagle, Git</p></div>
+	</section>
+</article>
